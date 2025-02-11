@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Tab Name And icon -->
+  <title>Cart - EatMe</title>
+  <link rel="icon" href="./logo/p_icon.png">
+
+  <!-- Links -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+
+  <script src="https://kit.fontawesome.com/a0d3e6b8a9.js" crossorigin="anonymous"></script>
+<body>
+
+         <!-- Top Bar -->
+  <section style="width: 100%;" class="top-bar">
+    <div class="container-fluid text-center" style="height: 50px;">
+      <div class="row d-flex justify-content-between align-items-center">
+
+        <!-- Contact -->
+        <div class="col-md-4 col-12 top-bar-i">
+          <div class="contact d-flex justify-content-center justify-content-md-start align-items-center">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:chandrujb3@gmail.com" class="top-bar-text">
+              eatu@support.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Delivery -->
+        <div class="col-md-4 col-12 top-bar-i text-center">
+          <div class="delivery d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-truck"></i>
+            <a href="#" class="top-bar-text">
+              Free Shipping above ₹500
+            </a>
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="col-md-4 col-12 top-bar-i text-end text-center text-md-end">
+          <ul class="menu">
+            <li>
+              <a class="top-bar-text top-bar-user align-items-center" href="./wishlist.html">
+                <i class="fa-regular fa-heart"></i>&nbsp;Wishlist
+              </a>
+            </li>
+            <li>
+              <a class="top-bar-text top-bar-user align-items-center" href="./cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart
+              </a>
+            </li>
+            <li>
+              <a class="top-bar-text top-bar-user align-items-center" href="./login.html" target="_self">
+                <i class="fa-regular fa-user"></i>&nbsp;Account
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Navigation Bar -->
+  <header class="nav-bar-background">
+    <nav>
+      <ul class="side-bar">
+        <li style="padding-top: 20px;" onclick=hideSidebar()><i class="fa-solid fa-xmark fa-xl"
+            style="color: #c19d5f;"></i></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./blog.html">Blogs</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+      </ul>
+      <ul>
+        <li><a href="./index.html"><img src="./logo/logo_n.png" alt="logo"></a></li>
+        <li class="hideOnMobile" style="padding-top: 50px;"><a href="./index.html">Home</a></li>
+        <li class="hideOnMobile" style="padding-top: 50px;"><a href="./products.html">Products</a></li>
+        <li class="hideOnMobile" style="padding-top: 50px;"><a href="./blog.html">Blogs</a></li>
+        <li class="hideOnMobile" style="padding-top: 50px;"><a href="./about.html">About</a></li>
+        <li class="nav-account" style="padding-top: 50px;"><a href="./login.html">
+          <i class="fa-regular fa-user fa-xl"
+              style="color: #c19d5f;"></i></a></li>
+        <li class="nav-account" style="padding-top: 50px;padding-right: 20px;"><a href="./wishlist.html"><i
+              class=" fa-regular fa-heart fa-xl" style="color: #c19d5f;"></i></a></li>
+        <li style="padding-top: 25px">
+          <form class="d-flex  nav-search search-container">
+            <input class="form-control me-2" type="search" placeholder="Search Products Here..." aria-label="Search">
+            <i style="padding: 0%;" class="fa fa-search search-icon"></i>
+          </form>
+        </li>
+
+        <li class="hideOnFull" style="padding-top: 40px;padding-right: 40px;" onclick=showSidebar()><i
+            class="fa-solid fa-bars fa-xl" style="color: #c19d5f;"></i></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+<div class="container cart-container">
+    <div class="cart-header">My cart:</div>
+
+    <!-- Cart Items -->
+    <div class="row cart-item align-items-center">
+        <div class="col-2 col-md-1">
+            <img src="./product-view/p1.png" alt="w-1">
+        </div>
+        <div class="col-4 col-md-5">
+            <div class="product-name">Double chocolate Cup Cake</div>
+            <div class="flavor">Flavor: Butterscotch</div>
+            <div class="price">₹299</div>
+        </div>
+        <div class="col-3 col-md-3">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-secondary btn-sm">-</button>
+                <span class="mx-2">1</span>
+                <button class="btn btn-outline-secondary btn-sm">+</button>
+            </div>
+        </div>
+        <div class="col-3 col-md-3 text-end">
+            <a href="#" class="remove-link">Remove</a>
+        </div>
+    </div>
+
+    <div class="row cart-item align-items-center">
+        <div class="col-2 col-md-1">
+            <img src="./product-view/p2.png" alt="w-2">
+        </div>
+        <div class="col-4 col-md-5">
+            <div class="product-name">Choco Balls</div>
+            <div class="flavor">Flavor: Chocolate</div>
+            <div class="price">₹299</div>
+        </div>
+        <div class="col-3 col-md-3">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-secondary btn-sm">-</button>
+                <span class="mx-2">1</span>
+                <button class="btn btn-outline-secondary btn-sm">+</button>
+            </div>
+        </div>
+        <div class="col-3 col-md-3 text-end">
+            <a href="#" class="remove-link">Remove</a>
+        </div>
+    </div>
+
+    <div class="row cart-item align-items-center">
+        <div class="col-2 col-md-1">
+            <img src="./product-view/p3.png" alt="w-3">
+        </div>
+        <div class="col-4 col-md-5">
+            <div class="product-name">Creamy Cup Cake</div>
+            <div class="flavor">Flavor: Vanilla</div>
+            <div class="price">₹299</div>
+        </div>
+        <div class="col-3 col-md-3">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-secondary btn-sm">-</button>
+                <span class="mx-2">1</span>
+                <button class="btn btn-outline-secondary btn-sm">+</button>
+            </div>
+        </div>
+        <div class="col-3 col-md-3 text-end">
+            <a href="#" class="remove-link">Remove</a>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="d-flex justify-content-between mt-4 action-buttons">
+        <a href="./products.html"><button class="wishlist-button">Continue Shopping</button></a>
+        <button class="wishlist-button">Clear Cart</button>
+    </div>
+
+    <!-- Shipping and Order Summary -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="shipping-info">
+                <h5>Shipping info</h5>
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <select id="country" class="form-select">
+                        <option selected>India</option>
+                        <option>United States</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="state" class="form-label">State</label>
+                    <select id="state" class="form-select">
+                        <option>Gujarat</option>
+                        <option>Maharashtra</option>
+                        <option  selected>Tamil Nadu</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Address 1" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="Address-1" placeholder="Address 1">
+                </div>
+                <div class="mb-3">
+                    <label for="Address 2" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="Address-2" placeholder="Address 2">
+                </div>
+                <div class="mb-3">
+                    <label for="zipcode" class="form-label">Postal/Zip Code</label>
+                    <input type="text" class="form-control" id="zipcode" placeholder="Zip/Postal Code">
+                </div>
+                <button class="wishlist-button">Confirm</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="order-summary">
+                <h5>Total</h5>
+                <p class="mb-3">₹997</p>
+                <input type="text" class="form-control discount-code mb-3" placeholder="Discount code">
+                <button class="wishlist-button">Checkout</button>
+                <div class="payment-icons">
+                    <img src="./icons/visa.png" alt="Visa">
+                    <img src="./icons/mastercard_payment_icon.png" alt="MasterCard">
+                    <img src="./icons/gpay_icon.png" alt="Gpay">
+                    <img src="./icons/paytm_icon.png" alt="Paytm">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container-fluid text-center" style="background-color: #d1cac2;padding-bottom: 50px;padding-top: 50px;">
+      <br>
+      <div class="row">
+        <div class="col">
+          <div style="margin-left: 50px;">
+            <img src="./logo/logo_n.png" alt="" style="float: left;">
+            <span style="margin-left: 20px;font-size: 20px;"><b>At Eatme, every bite is freshly crafted to tempt.
+              Sweet or savory, there's something for every craving.
+              Our passion is baked into every treat.
+              Go ahead-Eatme!</b></span>
+          </div>
+        </div>
+        <div class="col">
+          <b>
+            <span
+              style="font-weight: bolder;font-size: 20px;text-transform: uppercase;float: left;margin-left: 50px;">Information</span>
+            <br><br><br>
+            <ul style="list-style-type: none;text-align: left;float: left;">
+              <li style="padding: 5px;">About</li>
+              <li style="padding: 5px;">Privacy Policy</li>
+              <li style="padding: 5px;">Terms and Conditions</li>
+              <li style="padding: 5px;">My Orders</li>
+              <li style="padding: 5px;">Track Order</li>
+            </ul>
+          </b>
+        </div>
+        <div class="col">
+          <b>
+            <span
+              style="font-weight: bolder;font-size: 20px;text-transform: uppercase;float: left;margin-left: 50px;">Contact
+              Us</span>
+            <br><br><br>
+            <ul style="list-style-type: none;text-align: left;">
+              <li style="padding: 5px;">+004-12345678</li>
+              <li style="padding: 5px;">EatMe@support.com</li>
+              <li style="padding: 5px;">
+                <address style="font-weight: bold;">14 Ringe lane, las vegas,nv, 89156 united states</address>
+              </li>
+            </ul>
+          </b>
+        </div>
+        <div class="col">
+          <b>
+            <span
+              style="font-weight: bolder;font-size: 20px;text-transform: uppercase;float: left;margin-left: 50px;">Store
+              Open</span>
+            <br><br><br>
+            <ul style="list-style-type: none;text-align: left;">
+              <li style="padding: 5px;">Mon to Thu : 8:30AM to 6:30PM</li>
+              <li style="padding: 5px;">Fri to Sat : 8:30AM to 4:30PM</li>
+              <li style="padding: 5px;">Sunday : All sunday close</li>
+            </ul>
+          </b>
+          <br>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <span>Copyright ©️ 2020 EatMe. All rights reserved.</span>
+        </div>
+        <div class="col">
+          <i class="fa-brands fa-facebook-f fa-xl" style="padding: 5px;"></i>
+          <i class="fa-brands fa-instagram fa-xl" style="padding: 5px;"></i>
+          <i class="fa-brands fa-square-x-twitter fa-xl" style="padding: 5px;"></i>
+          <i class="fa-brands fa-linkedin-in fa-xl" style="padding: 5px;"></i>
+          <i class="fa-brands fa-reddit fa-xl" style="padding: 5px;"></i>
+          <i class="fa-brands fa-telegram fa-xl" style="padding: 5px;"></i>
+        </div>
+        <div class="col">
+          <a href="#" style="padding: 5px;text-decoration: none;color: black;">Terms and Conditions</a>
+          <a href="#" style="padding: 5px;text-decoration: none;color: black;">Privacy Policy</a>
+          <a href="#" style="padding: 5px;text-decoration: none;color: black;">Faq's</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
