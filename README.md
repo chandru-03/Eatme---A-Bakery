@@ -74,7 +74,7 @@ style.css
 
 ## 🔗 Live Demo
 
-[View Website]((https://chandru-03.github.io/Eatme---A-Bakery/))
+[View Website](https://chandru-03.github.io/Eatme---A-Bakery/)
 
 ---
 
